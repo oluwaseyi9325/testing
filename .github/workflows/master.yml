@@ -16,8 +16,8 @@ jobs:
     - name: Deploy to shared hosting
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        ftp-server: oluwafemi.name.ng
-        ftp-username: oluwafe4
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        server: ftp.example.com
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./
         remote-dir: /public_html/oluwafemi.name.ng
